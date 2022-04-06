@@ -1,6 +1,11 @@
 @font-face {
-    font-family: "caslon-antique-regular";
-    src: url("https://www.dafontfree.net/data/35/c/138686/Caslo-an.ttf") format("woff"), url("https://www.dafontfree.net/data/35/c/138686/Caslo-an.ttf") format("opentype"), url("https://www.dafontfree.net/data/35/c/138686/Caslo-an.ttf") format("truetype");
+    font-family: "Caslon Antique";
+    src: url('fonts/CaslonAntique.ttf');
+}
+
+@font-face {
+    font-family: "Castellar";
+    src: url('fonts/CASTELAR.ttf');
 }
 
 * {
@@ -268,8 +273,12 @@ footer ul {
 
 
 @media screen and (max-width: 500px) {
-    .uk-sticky,.uk-sticky-fixed,nav{
+    .uk-sticky,.uk-sticky-fixed,.uk-sticky-below{
         position: fixed;
+    }
+    .uk-sticky{
+        background-color:black;
+        transform: none;
     }
     .video {
         object-fit: contain;
