@@ -20,11 +20,13 @@
     /* display: none; */
     scrollbar-width: 5px;
 }
-.nav-logo-mob,.nlm{
+
+.nlm {
     display: none;
 }
+
 html {
-    background-color: black ;
+    background-color: black;
 }
 
 h1 {
@@ -33,6 +35,14 @@ h1 {
     font-size: 4vw;
     color: #8C551A;
     text-shadow: 2px 2px 2px rgba(88, 88, 88, 0.671);
+}
+
+a.logo-hide {
+    display: block;
+}
+
+.menu {
+    display: none;
 }
 
 .nav-logo {
@@ -273,16 +283,56 @@ footer ul {
 
 
 @media screen and (max-width: 500px) {
-    .uk-sticky,.uk-sticky-fixed,.uk-sticky-below{
+    .uk-navbar-center {
+        padding: 20px 0;
+    }
+
+    div.uk-sticky {
+        background-color: black;
+    }
+
+    .uk-sticky, .uk-sticky-fixed, .uk-sticky-below {
         position: fixed;
     }
-    .uk-sticky{
-        background-color:black;
+
+    .uk-sticky {
+        background-color: black;
         transform: none;
+    }
+
+    a.logo-hide {
+        display: none !important;
+    }
+
+    .nlm {
+        display: block;
+        max-height: 5vh;
+    }
+
+    button#menu.menu {
+        display: block;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    a.uk-icon svg {
+        color: white;
+    }
+
+    .uk-navbar-center {
+        display: flex;
+        width: 92vw;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #nav-ul{
+        display: none !important;
     }
     .video {
         object-fit: contain;
     }
+
     .about {
         height: fit-content;
         padding: 5vh 10vw;
@@ -353,7 +403,8 @@ footer ul {
         align-items: center;
         text-align: center;
     }
-    .ftr img{
+
+    .ftr img {
         max-width: 37vw;
     }
 }
